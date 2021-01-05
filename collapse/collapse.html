@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <lequ-collapse>
+        <lequ-collapse-item title="Node" name="1">
+            <div class="title"></div>
+            <div>Node.js® 是一个基于 Chrome V8 引擎 的 JavaScript 运行时。</div>
+        </lequ-collapse-item>
+        <lequ-collapse-item title="React" name="2">
+            <div class="title"></div>
+            <div>用于构建用户界面的 JavaScript 库</div>
+        </lequ-collapse-item>
+        <lequ-collapse-item title="Vue" name="3">
+            <div class="title"></div>
+            <div>Vue.js 是一套构建用户界面的渐进式框架。</div>
+        </lequ-collapse-item>
+    </lequ-collapse>
+
+<template id="lequ-collapse-templ">
+    <div class="lequ-collapse">
+        <slot></slot>
+    </div>
+</template>
+
+<template id="lequ-collapse-item">
+    <div class="lequ-collapse-item">
+        <div class="title"></div>
+        <div class="content">
+            <slot></slot>
+        </div>
+    </div>
+</template>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

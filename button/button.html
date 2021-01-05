@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        :root{
+            --background-color: red;
+            --text-color: yellow
+        }
+    </style>
+</head>
+<body>
+<lequ-btn type="default">第一个按钮</lequ-btn>
+<lequ-btn type="primary">第二个按钮</lequ-btn>
+<template id="btn">
+    <button class="lequ-btn">
+        <slot>默认文案</slot>
+    </button>
+</template>
+<script src="button.js"></script>
+</body>
+</html>
